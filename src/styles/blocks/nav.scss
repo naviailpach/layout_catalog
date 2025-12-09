@@ -25,6 +25,8 @@
     text-decoration: none;
     text-transform: uppercase;
 
+    transition: color 0.3s linear;
+
     &.is-active {
       color: $blue-accent;
       position: relative;
