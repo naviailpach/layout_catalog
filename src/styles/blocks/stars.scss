@@ -5,7 +5,7 @@
   &__star {
     width: $star-size;
     height: $star-size;
-    margin-right: $margin-right-star;
+    margin-right: $star-spacing;
     background-image: url(../images/star.svg);
     background-repeat: no-repeat;
     background-position: left;
@@ -21,20 +21,20 @@
 
     background-image: url(../images/star-active.svg);
     background-repeat: repeat-x;
-    background-size: 20px 11px;
+    background-size: $star-active-width $star-active-height;
 
     position: absolute;
-    top: 2px;
-    left: -4px;
+    top: $star-active-offset-top;
+    left: $star-active-offset-left;
   }
 
   @for $count from 1 through 5 {
     &--#{$count}::before {
-      width: calc($count * 20px - 4px);
+      width: calc($count * $star-active-width - $star-spacing);
     }
   }
 
   &--card-rating {
-    margin-top: 16px;
+    margin-top: $card-rating-margin;
   }
 }
