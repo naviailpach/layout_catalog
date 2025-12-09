@@ -33,8 +33,4 @@
       width: calc($count * $star-active-width - $star-spacing);
     }
   }
-
-  &--card-rating {
-    margin-top: $card-rating-margin;
-  }
 }

@@ -8,7 +8,7 @@
   }
 
   &__item {
-    margin-right: 20px;
+    margin-right: $nav-item-margin-right;
 
     &:last-child {
       margin-right: 0;
@@ -17,8 +17,8 @@
 
   &__link {
     display: block;
-    height: 60px;
-    line-height: 60px;
+    height: $nav-link-height;
+    line-height: $nav-link-line-height;
     font-weight: 500;
 
     color: $main-accent;
@@ -33,11 +33,11 @@
 
       &::after {
         content: '';
-        width: 37px;
-        height: 4px;
+        width: $nav-link-active-width;
+        height: $nav-link-active-height;
 
         background-color: $blue-accent;
-        border-radius: 8px;
+        border-radius: $nav-link-active-border-radius;
 
         position: absolute;
         left: 0;

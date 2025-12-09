@@ -16,6 +16,22 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+  &__title {
+    display: block;
+    margin: 0 0 4px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $main-accent;
+
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &__item {
     width: $card-item-width;
     height: auto;
@@ -28,10 +44,14 @@
     background-color: $white;
     cursor: pointer;
 
-    transition: transform 0.3s linear;
+    transition: all 0.3s linear;
 
     &:hover {
       transform: scale(1.2);
+
+      .card__title {
+        color: $card-item-text-color-hover;
+      }
     }
   }
 
@@ -43,25 +63,6 @@
     background-image: url(../images/imac.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
-  }
-
-  &__title {
-    display: block;
-    margin: 0 0 4px;
-
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: $main-accent;
-
-    text-decoration: none;
-
-    transition: color 0.3s linear;
-
-    &:hover {
-      text-decoration: underline;
-      color: $card-item-text-color-hover;
-    }
   }
 
   &__product {
@@ -80,6 +81,10 @@
     font-size: 10px;
     line-height: 14px;
     color: $main-accent;
+  }
+
+  &__info--rating {
+    margin-top: 16px;
   }
 
   &__info--price {

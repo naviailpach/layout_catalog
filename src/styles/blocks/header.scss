@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: $header-container-size;
-    padding: 0 50px;
+    padding: 0 $padding-left-right-container-header;
 
     box-sizing: border-box;
   }

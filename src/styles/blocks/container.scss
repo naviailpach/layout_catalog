@@ -1,6 +1,6 @@
 .container {
   max-width: $container-size;
   margin: 0 auto;
-  padding: 50px 40px;
+  padding: $container-padding-top-bottom $container-padding-left-right;
   box-sizing: border-box;
 }
